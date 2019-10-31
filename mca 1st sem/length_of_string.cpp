@@ -1,25 +1,14 @@
 #include <stdio.h>
 #include <conio.h>
-//function to find length of a string
-int i=0;
-int length(char str[])
-{
-	if(str[i]!='\0')
-	{
-		i++;
-		length(str);
-	}
-	else
-	{
-		return i;
-	}
-}
-//main function
 int main()
 {
-	char sen[1000];
-	printf("Enter a String : ");
-	gets(sen);
-	printf("Length of the string is : %d",length(sen));
-	getch();
+	char str[1000]; int len=0;
+	printf("Enter 1st String : ");
+	gets(str);
+	while(str[len]!='\0')
+	{
+		len++;
+	}
+	printf("Length of the String is %d",len);
 }
+	
